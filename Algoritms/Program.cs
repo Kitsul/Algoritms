@@ -9,10 +9,17 @@ namespace Algoritms
     {
         static void Main(string[] args)
         {
-            LinkedListNode<int> first = new LinkedListNode<int>(5);
-            LinkedListNode<int> second = new LinkedListNode<int>(10);
-            first.Next = second;
-            Console.WriteLine(first.Next.Value);
+            LinkedList<int> list = new LinkedList<int>();
+            list.Add(5);
+            list.Add(15);
+            list.Add(25);
+
+            list.Remove(15);
+
+
+            Console.WriteLine(list.Count);
+            Console.WriteLine(list.head.Value);
+            Console.WriteLine(list.tail.Value);
         }
     }
 }
